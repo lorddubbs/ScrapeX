@@ -1,0 +1,10 @@
+services:
+  scrape_x:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - scraper
+
+networks:
+  scraper:
