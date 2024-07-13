@@ -53,16 +53,12 @@ COPY --from=builder /opt/venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
 # Copy the application code into the container
-COPY . .
+COPY . /app
 
-# Change ownership of the application code to non-root user
-RUN chown -R appuser:appgroup /app
-
+# Create logs folder and Change ownership of the application code to non-root user
+RUN mkdir -p /logs && chown -R appuser:appgroup /logs && chmod 755 /logs
 # Switch to the non-root user
 USER appuser
-
-# Set environment variables
-ENV CONFIG_FILE=/app/config/config.json
 
 # Run the main script
 CMD ["python", "src/main.py"]

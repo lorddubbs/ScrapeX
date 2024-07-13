@@ -20,3 +20,10 @@ flake8==7.1.0  # Linter for checking code style and quality
 black==24.4.2  # Uncompromising code formatter
 isort==5.13.2 # Tool for sorting imports in Python files
 mypy==1.10.0 # Static type checker for Python
+
+# For asynchronous HTTP requests
+aiohttp==3.9.5
+
+python-dotenv==1.0.1
+
+pytest==8.2.2
