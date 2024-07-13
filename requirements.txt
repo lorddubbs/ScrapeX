@@ -1,3 +1,29 @@
 # Web scraping libraries
 scrapy==2.5.1
-requests==2.25.1
+scrapy-redis==0.7.1
+scrapy-splash==0.8.
+
+# HTTP library for additional requests
+requests==2.26.0
+
+# Image generation and processing
+Pillow==10.3.0
+
+# OpenAI API client
+openai==1.35.3
+
+# Advanced scheduling library
+APScheduler==3.10.4
+
+# Linting and formatting
+flake8==7.1.0  # Linter for checking code style and quality
+black==24.4.2  # Uncompromising code formatter
+isort==5.13.2 # Tool for sorting imports in Python files
+mypy==1.10.0 # Static type checker for Python
+
+# For asynchronous HTTP requests
+aiohttp==3.9.5
+
+python-dotenv==1.0.1
+
+pytest==8.2.2

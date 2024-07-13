@@ -1,0 +1,14 @@
+services:
+  scrape_x:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./logs:/logs
+    restart: unless-stopped
+    networks:
+      - scraper
+    
+
+networks:
+  scraper:
